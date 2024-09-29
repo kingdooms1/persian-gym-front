@@ -1,0 +1,272 @@
+@font-face {
+    font-family: dirooz;
+    src: url(/assets/font/Dirooz.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: dirooz;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* header */
+header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.6)) , url(/assets/img/banner.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header nav .line{
+    width: 25px;
+    height: 3px;
+    background-color: azure;
+}
+header nav a{
+    color: white;
+    margin-right: 10px;
+}
+header nav a:hover{
+    background-color: rgba(201, 201, 201,0.2);
+    color: white;
+    border-radius: 20px;
+}
+header .gym-name{
+    text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    animation: spin 1.5s ease;
+    color: white;
+}
+@keyframes spin{
+    0%{
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+/* end header */
+
+
+
+/* honor */
+.honor{
+    background-color: rgba(19, 19, 19,0.9);
+    text-align: center;
+    padding: 5% 8%;
+    color: white;
+}
+.honor-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+    text-align: center;
+}
+.honor-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.honor-content i{
+    font-size: 80px;
+    margin: 8% 2%;
+}
+/* end honor */
+
+
+
+/* service */
+.service{
+    background-color: rgb(182, 182, 182);
+    padding: 5% 8%;
+}
+.service-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-content .card{
+    border: none;
+    margin-top: 5%;
+    position: relative;
+    border-radius: 10px;
+}
+.service-content .card-img{
+    border-radius: 10px;
+}
+.service-content .card p{
+    padding-right: 10px;
+    position: absolute;
+    left: 0%;
+    bottom: 8%;
+    background-color: rgba(55, 58, 218 , 0.8);
+    color: white;
+    font-size: 25px;
+    width: 200px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* end service */
+
+
+
+/* gallery */
+.gallery{
+    padding: 50px 40px;
+}
+.gallery .photo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+}
+.gallery .photo img{
+    border-radius: 5px;
+}
+ @media screen and (max-width: 576px) {
+    .gallery .photo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,1fr);
+        gap: 10px;
+    }    
+}
+/* end gallery */
+
+
+
+/* coach */
+.coach{
+    background-color: rgb(32, 32, 32);
+    padding: 5% 8%;
+    color: white;
+}
+.coach .slide{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.coach .slide img{
+    border-radius: 50%;
+}
+.coach .slide h5{
+    margin: 5% 0%;
+}
+.coach .slide .star{
+    margin-bottom: 8%;
+}
+/* end coach */
+
+
+
+/* plan */
+.plan{
+    padding: 5% 8%;
+}
+.plan-content{
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.plan-card{
+    background: linear-gradient(rgba(0,0,0,0.6) , rgba(0,0,0,0.8)) , url(/assets/img/membership.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 580px;
+    border-radius: 20px;
+    padding: 5% 0%;
+    transition: all 0.4s linear;
+    margin-top: 5%;
+}
+.plan-card:hover{
+    box-shadow: 0px 0px 20px 1px gray;
+    transform: translateY(-40px);
+}
+.plan-card p , h1 {
+    margin: 40px 20px;
+}
+.plan-card span:hover{
+    background-color: rgb(185, 185, 185,0.5);
+    padding: 2% 25%;
+    border-radius: 20px;
+}
+/* end plan */
+
+
+
+/* contact with us */
+.contact{
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(102deg , rgba(0,0,0,0.7) 50% , rgba(0,0,0,0) 50%) , url(/assets/img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact .information{
+    padding: 2% 8%;
+    color: white;
+}
+.contact .form-check{
+    display: flex;
+    margin: 5% 0%;
+}
+.contact .form-check input{
+    margin-left: 10px;
+}
+.contact .form-group input{
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 1%;
+}
+.contact button{
+    width: 100%;
+}
+/* end contact with us */
+
+
+
+/* footer */
+.footer{
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+.footer li{
+    list-style-type: none;
+}
+.footer li a{
+    color: white;
+}
+.footer h3{
+    margin: 10px 0px;
+}
+.footer .social-icon i{
+    font-size: 30px;
+    margin: 20px 8px;
+}
+.footer input{
+    width: 80%;
+    padding: 0px 10px;
+}
+/* end footer */
